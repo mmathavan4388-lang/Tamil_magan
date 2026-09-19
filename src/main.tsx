@@ -6,7 +6,7 @@ import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename="/Tamil_magan">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </StrictMode>,
