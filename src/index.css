@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --color-brand-50: #fdf3f2;
+  --color-brand-100: #fbe3e1;
+  --color-brand-200: #f6c9c6;
+  --color-brand-300: #eda29c;
+  --color-brand-400: #e0716a;
+  --color-brand-500: #c8342c;
+  --color-brand-600: #a91f1f;
+  --color-brand-700: #8c1a1c;
+  --color-brand-800: #6f1618;
+  --color-brand-900: #4a1012;
+
+  --color-charcoal-50: #f6f6f7;
+  --color-charcoal-100: #e7e7e9;
+  --color-charcoal-200: #c7c8cc;
+  --color-charcoal-300: #9d9fa6;
+  --color-charcoal-400: #71737c;
+  --color-charcoal-500: #53555f;
+  --color-charcoal-600: #3f4149;
+  --color-charcoal-700: #2f3037;
+  --color-charcoal-800: #201f26;
+  --color-charcoal-900: #15141a;
+  --color-charcoal-950: #0c0b10;
+
+  --color-gold-50: #fdf9ec;
+  --color-gold-100: #faf0c9;
+  --color-gold-200: #f3dd8c;
+  --color-gold-300: #ecc85a;
+  --color-gold-400: #dfae2f;
+  --color-gold-500: #c2921f;
+  --color-gold-600: #9c7218;
+  --color-gold-700: #7a5817;
+  --color-gold-800: #644819;
+  --color-gold-900: #533c19;
+
+  --shadow-card: 0 1px 2px rgba(12, 11, 16, 0.04), 0 8px 24px -8px rgba(12, 11, 16, 0.10);
+  --shadow-card-hover: 0 4px 10px rgba(12, 11, 16, 0.06), 0 16px 36px -10px rgba(12, 11, 16, 0.16);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-charcoal-800);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-brand-200);
+  color: var(--color-brand-900);
+}
+
+.demo-badge {
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fade-up 0.5s ease both;
+}
+
+.bg-noise {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.06) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { scrollbar-width: none; }
