@@ -11,6 +11,7 @@ import { Categories } from "./pages/Categories";
 import { Suppliers } from "./pages/Suppliers";
 import { SupplierDetail } from "./pages/SupplierDetail";
 import { BulkOrders } from "./pages/BulkOrders";
+import { PriceList } from "./pages/PriceList";
 import { HowItWorks } from "./pages/HowItWorks";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
@@ -76,6 +77,7 @@ function App() {
           <Route path="/suppliers" element={<Suppliers />} />
           <Route path="/suppliers/:slug" element={<SupplierDetail />} />
           <Route path="/bulk-orders" element={<BulkOrders />} />
+          <Route path="/price-list" element={<PriceList />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

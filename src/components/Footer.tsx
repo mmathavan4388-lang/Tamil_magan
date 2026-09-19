@@ -7,6 +7,7 @@ const linkGroups = [
     links: [
       { label: "Products", to: "/products" },
       { label: "Categories", to: "/categories" },
+      { label: "Price List", to: "/price-list" },
       { label: "Verified Suppliers", to: "/suppliers" },
       { label: "Bulk Orders", to: "/bulk-orders" },
     ],

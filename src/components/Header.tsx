@@ -16,6 +16,7 @@ const navLinks = [
   { to: "/", label: "Home" },
   { to: "/products", label: "Products" },
   { to: "/categories", label: "Categories" },
+  { to: "/price-list", label: "Price List" },
   { to: "/suppliers", label: "Verified Suppliers" },
   { to: "/bulk-orders", label: "Bulk Orders" },
   { to: "/how-it-works", label: "How It Works" },
